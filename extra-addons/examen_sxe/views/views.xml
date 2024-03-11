@@ -1,6 +1,6 @@
 <odoo>
   <data>
-    <!-- explicit list view definition -->
+    <!-- Vista de lista existente -->
     <record model="ir.ui.view" id="test_model_list_view">
       <field name="name">test.model.list</field>
       <field name="model">test_model</field>
@@ -12,20 +12,34 @@
       </field>
     </record>
 
-    <!-- actions opening views on models -->
+    <!-- Definición de vista de formulario -->
+    <record model="ir.ui.view" id="test_model_form_view">
+      <field name="name">test.model.form</field>
+      <field name="model">test_model</field>
+      <field name="arch" type="xml">
+        <form string="Test Model Form">
+          <group>
+            <field name="producto"/>
+            <field name="viabilidad"/>
+          </group>
+        </form>
+      </field>
+    </record>
+
+    <!-- Acciones para abrir vistas en modelos -->
     <record model="ir.actions.act_window" id="test_model_action_window">
       <field name="name">Test Model</field>
       <field name="res_model">test_model</field>
       <field name="view_mode">tree,form</field>
     </record>
 
-    <!-- Top menu item -->
+    <!-- Elemento de menú principal -->
     <menuitem name="Test Model" id="test_model_menu_root"/>
 
-    <!-- menu categories -->
+    <!-- Categorías de menú -->
     <menuitem name="Test Model" id="test_model_menu" parent="test_model_menu_root"/>
 
-    <!-- actions -->
+    <!-- Acciones -->
     <menuitem name="View Products" id="test_model_menu_view_products" parent="test_model_menu"
               action="test_model_action_window"/>
   </data>
