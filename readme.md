@@ -243,4 +243,4 @@ Tras agregar datos desde Odoo, esos mismos deberían aparecer en la tabla de nue
 
 Hasta aquí ha llegado la guía.
 
-By _Lucas Feliu_.
+By _Lucas Feliu Álvarez_.
