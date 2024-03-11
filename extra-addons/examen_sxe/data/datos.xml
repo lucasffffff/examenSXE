@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- Producto 1 -->
+        <record id="producto_1" model="test_model">
+            <field name="producto">Producto A</field>
+            <field name="viabilidad">0.75</field>
+        </record>
+
+        <!-- Producto 2 -->
+        <record id="producto_2" model="test_model">
+            <field name="producto">Producto B</field>
+            <field name="viabilidad">0.85</field>
+        </record>
+
+        <!-- Producto 3 -->
+        <record id="producto_3" model="test_model">
+            <field name="producto">Producto C</field>
+            <field name="viabilidad">0.95</field>
+        </record>
+
+        <!-- Producto 4 -->
+        <record id="producto_4" model="test_model">
+            <field name="producto">Producto D</field>
+            <field name="viabilidad">0.65</field>
+        </record>
+
+        <!-- Producto 5 -->
+        <record id="producto_5" model="test_model">
+            <field name="producto">Producto E</field>
+            <field name="viabilidad">0.55</field>
+        </record>
+    </data>
+</odoo>

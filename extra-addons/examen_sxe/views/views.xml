@@ -1,0 +1,32 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="test_model_list_view">
+      <field name="name">test.model.list</field>
+      <field name="model">test_model</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="producto"/>
+          <field name="viabilidad"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="test_model_action_window">
+      <field name="name">Test Model</field>
+      <field name="res_model">test_model</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Top menu item -->
+    <menuitem name="Test Model" id="test_model_menu_root"/>
+
+    <!-- menu categories -->
+    <menuitem name="Test Model" id="test_model_menu" parent="test_model_menu_root"/>
+
+    <!-- actions -->
+    <menuitem name="View Products" id="test_model_menu_view_products" parent="test_model_menu"
+              action="test_model_action_window"/>
+  </data>
+</odoo>
