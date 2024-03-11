@@ -32,7 +32,7 @@ services:
       - "5433:5432"
 ```
 
-## Conectarse a la Base de Datos desde PyCharm
+## Conectarse a la Base de Datos desde PyCharm:
 Para poder conectarse con la base de datos desde el IDE, debemos darle al + > Data Source > PostgresSQL.
 Seleccionaremos como puerto 5433, como usuario: odoo y como contraseña: myodoo que son las credenciales que pusimos en el código.
 
